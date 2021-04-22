@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+:root{
+  --mainBlue: #1565c0;
+  --mainRed: #c62828;
+  --mainWhite: #ffffff;
+  --mainGrey: 	#999999;
+  --mainBlack: #252525;
+
+
+}
+
+
+body{
+  color: var(--mainWhite);
+  height: 100%;
+  
+}
+
+.welcome{
+  min-height: 100vh;
+}
+
+/* ------------------------- navbar */
+#navbar{
+  background-color: var(--mainRed);
+  display: flex;
+  height: 60px;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding-right: 30px;
+}
+
+.navlinks{
+  text-decoration: none;
+  padding: 10px;
+  letter-spacing: var(--letterSpacing);
+  color: var(--mainWhite) ;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+#navbar a:hover{
+  color: var(--mainBlue);
+}
+
+
+
+/* ------------------------- end of navbar */
+
+/* ------------------------- Welcome Section */
+
+.welcome-section{
+  height: calc(100vh);
+  width: 100%;
+  background: var(--mainBlack);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.welcome-section h1{
+  padding: 2rem 0;
+  letter-spacing: var(--letterSpacing);
+  word-spacing: var(--wordSpacing);
+  
+}
+
+.welcome-section h2{
+  padding: 1rem 0;
+  color: var(--mainRed);
+  text-transform: lowercase;
+  font-style: italic;
+  letter-spacing: var(--letterSpacing);
+  word-spacing: var(--wordSpacing);
+}
+
+.welcome-section p{
+  text-transform: none;
+}
+
+/* ------------------------- End of Welcome Section */
+
+
+/* ------------------------- projects section */
+.projects{
+  min-height: calc(100vh);
+  padding-top: 100px;
+  background-color: var(--mainBlue);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+
+  
+ 
+}
+
+.project-title{
+ 
+  padding-bottom: 60px;
+
+/*   padding-top: 120px;
+  padding-bottom: 0.1rem;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto; */
+
+}   
+
+.products{
+
+  width: 95%;
+  margin: auto;
+  display: grid;
+  
+  justify-items: center;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  
+
+ /*  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+ */
+  
+}
+
+.single-product{
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+/* ------------------------- end of projects section */
+
+
+/* ------------------------- contact section */
+
+.contact{
+  background: var(--mainBlack);
+  height: calc(100vh - 60px);
+  width: 100%;
+}
+
+.contact-title{
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+.contact-title h2,h4{
+  text-transform: capitalize;
+  padding: 7.5px;
+  letter-spacing: var(--letterSpacing);
+  word-spacing: var(--wordSpacing);
+}
+
+.contact-title h4{
+  font-style: italic;
+}
+
+.social-contact{
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-contact a{
+    color: var(--mainWhite);
+    padding: 10px;  
+}
+
+.social-contact a:hover{
+  color: var(--mainBlue);
+}
+/* ------------------------- end of contact section */
